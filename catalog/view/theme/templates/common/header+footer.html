@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Your Store</title>
+
+<link href="../../stylesheet/stylesheet.css" rel="stylesheet"
+	type="text/css" />
+<!--<link href="javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" /> -->
+</head>
+
+
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="logo">
+				<a href="/home.html"><img
+					src="../../../../../image/data/logo.png" width="268" height="50"
+					alt="Your Store" />
+				</a>
+			</div>
+			<div id="currency"></div>
+			<div id="cart">
+				<div class="heading">
+					<h4>Shopping Cart</h4>
+					<a> <span id="cart_total">0 item(s) - £0.00 </span> </a>
+					<div class="content">
+						<div class="empty">Your shopping cart is empty!</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="search">
+				<div class="button-search"></div>
+				<input type="text" onkeydown="this.style.color = '#000000';"
+					onclick="this.value = '';" value="Search" name="filter_name">
+			</div>
+
+			<div id="welcome">
+				You are logged in as <a href="">charith</a> <b>(</b><a href="">Logout</a><b>)</b>
+			</div>
+
+			<div class="links">
+				<a href="http://localhost/opencart/index.php?route=common/home">Home
+				</a> <a id="wishlist_total"
+					href="http://localhost/opencart/index.php?route=account/wishlist">Wish
+					List (0) </a> <a
+					href="http://localhost/opencart/index.php?route=account/account">My
+					Account </a> <a
+					href="http://localhost/opencart/index.php?route=checkout/cart">Shopping
+					Cart </a> <a
+					href="http://localhost/opencart/index.php?route=checkout/checkout">Checkout
+				</a>
+			</div>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="">Desktops </a></li>
+				<li><a href="">Desktops </a></li>
+				<li><a href="">Desktops </a></li>
+				<li><a href="">Desktops </a></li>
+			</ul>
+		</div>
+
+		<div id="notification"></div>
+		<div id="content">
+			<div class="slideshow"></div>
+			<div class="box">
+				<div class="box-heading">Featured</div>
+				<div class="box-content">
+					<div class="box-product">
+						<div>
+							<div class="image">
+								<a
+									href="http://localhost/opencart/index.php?route=product/product&product_id=41">
+									<img alt="iMac"
+									src="http://localhost/opencart/image/cache/data/imac_1-90x90.jpg">
+								</a>
+							</div>
+							<div class="name">
+								<a
+									href="http://localhost/opencart/index.php?route=product/product&product_id=41">iMac</a>
+							</div>
+							<div class="price">£75.08</div>
+							<div class="cart">
+								<a class="button" onclick="addToCart('41');"> <span>Add
+										to Cart</span> </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="carousel0"></div>
+				<div id="footer">
+					<div class="column">
+						<h3>Information</h3>
+						<ul>
+							<li><a
+								href="http://localhost/opencart/index.php?route=information/information&information_id=4">About
+									Us</a></li>
+							<li><a
+								href="http://localhost/opencart/index.php?route=information/information&information_id=6">Delivery
+									Information</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
