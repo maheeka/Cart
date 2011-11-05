@@ -53,14 +53,10 @@
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a href="">Desktops </a>
-				</li>
-				<li><a href="">Desktops </a>
-				</li>
-				<li><a href="">Desktops </a>
-				</li>
-				<li><a href="">Desktops </a>
-				</li>
+				<li><a href="">Desktops </a></li>
+				<li><a href="">Desktops </a></li>
+				<li><a href="">Desktops </a></li>
+				<li><a href="">Desktops </a></li>
 			</ul>
 		</div>
 		<div id="notification"></div>
@@ -76,18 +72,21 @@
 								<ul>
 									<li><a
 										href="http://localhost/opencart/index.php?route=product/category&path=20_26">
-											- PC (0)</a></li>
+											- PC (0)</a>
+									</li>
 									<li><a
 										href="http://localhost/opencart/index.php?route=product/category&path=20_27">
-											- Mac (1)</a></li>
-								</ul></li>
+											- Mac (1)</a>
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 
 		</div>
-		
+
 		<div id="content">
 			<div class="breadcrumb">
 				<a href="http://localhost/opencart/index.php?route=common/home">Home</a>
@@ -116,21 +115,83 @@
 						</a>
 					</div>
 				</div>
-				<div class="right"></div>
-			</div>
-			<div id="tabs" class="htabs">
-            	<a class="selected" href="#tab-description" style="display: inline;">Description</a>
-                <a href="#tab-review" style="display: inline;">Reviews (0)</a>
-                <a href="#tab-related" style="display: inline;">Related Products (1)</a>
-            </div>
-			<div id="tab-description" class="tab-content" style="display: block;">
-            	<div> Just when you thought iMac had everything, now there’s even more. More powerful Intel Core 2 Duo processors. And more memory standard. Combine this with Mac OS X Leopard and iLife ’08, and it’s more all-in-one than ever. iMac packs amazing performance into a stunningly slim space..</div>
-			</div>
-			<div id="tab-review" class="tab-content" style="display: none;">
-			</div>
-			<div id="tab-related" class="tab-content" style="display: none;">
+				<div class="right">
+					<div class="description">
+						<span>Brand:</span> <a
+							href="http://localhost/opencart/index.php?route=product/manufacturer/product&manufacturer_id=8">Apple</a>
+						<br /> <span>Product Code:</span> Product 14 <br /> <span>Reward
+							Points:</span> 0 <br /> <span>Availability:</span> In Stock
+					</div>
+					<div class="price">
+						Price: £75.08 <br /> <span class="price-tax">Ex Tax:
+							£62.83</span> <br />
+					</div>
+					<div class="cart">
+						<div>
+							Qty: <input type="text" value="1" size="2" name="quantity">
+								<input type="hidden" value="41" size="2" name="product_id">
+									<a id="button-cart" class="button"> <span>Add to
+											Cart</span> </a>
+						</div>
+						<div>
+							<span>&nbsp;&nbsp;&nbsp;- OR -&nbsp;&nbsp;&nbsp;</span>
+						</div>
+						<div>
+							<a onclick="addToWishList('41');">Add to Wish List</a> <br>
+								<a onclick="addToCompare('41');">Add to Compare</a>
+						</div>
+					</div>
+
+					<div class="review">
+						<div>
+							<img alt="0 reviews"
+								src="catalog/view/theme/default/image/stars-0.png"> <a
+								onclick="$('a[href=\'#tab-review\']').trigger('click');">0
+									reviews</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a
+								onclick="$('a[href=\'#tab-review\']').trigger('click');">Write
+									a review</a>
+						</div>
+						<div class="share">
+							<div class="addthis_default_style">
+								<a class="addthis_button_compact at300m" href="#"> <span
+									class="at300bs at15nc at15t_compact"></span> Share </a> <a
+									class="addthis_button_email at300b" title="Email" href="#">
+									<span class="at300bs at15nc at15t_email"></span> </a> <a
+									class="addthis_button_print at300b" title="Print" href="#">
+									<span class="at300bs at15nc at15t_print"></span> </a> <a
+									class="addthis_button_facebook at300b" title="Send to Facebook"
+									href="#"> <span class="at300bs at15nc at15t_facebook"></span>
+								</a> <a class="addthis_button_twitter at300b" title="Tweet This"
+									href="#"> <span class="at300bs at15nc at15t_twitter"></span>
+								</a>
+							</div>
+							<script src="http://s7.addthis.com/js/250/addthis_widget.js"
+								type="text/javascript">
+								
+							</script>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<div id="tabs" class="htabs">
+			<a class="selected" href="#tab-description" style="display: inline;">Description</a>
+			<a href="#tab-review" style="display: inline;">Reviews (0)</a> <a
+				href="#tab-related" style="display: inline;">Related Products
+				(1)</a>
+		</div>
+		<div id="tab-description" class="tab-content" style="display: block;">
+			<div>Just when you thought iMac had everything, now there’s
+				even more. More powerful Intel Core 2 Duo processors. And more
+				memory standard. Combine this with Mac OS X Leopard and iLife ’08,
+				and it’s more all-in-one than ever. iMac packs amazing performance
+				into a stunningly slim space..</div>
+		</div>
+		<div id="tab-review" class="tab-content" style="display: none;">
+		</div>
+		<div id="tab-related" class="tab-content" style="display: none;">
+		</div>
+	</div>
 	</div>
 
 
